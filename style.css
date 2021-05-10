@@ -1,0 +1,336 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #aa2ee6;
+  color: #fff;
+  outline: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease;
+}
+
+.quote {
+  width: 100%;
+  padding: 100px 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.quote h2 {
+  font-size: 40px;
+  padding: 15px 0;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  letter-spacing: 5px;
+}
+
+.dest {
+  text-align: center;
+  padding-top: 240px;
+}
+
+.dest h1 {
+  font-size: 100px;
+  font-weight: 500;
+  color: #feffde;
+}
+
+.overlay {
+  position: absolute;
+  background-color: black;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+.pad-class {
+  padding: 100px 50px;
+}
+
+/* HEADER SECTION*/
+
+#head-section {
+  width: 100%;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/head-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.head-text {
+  text-align: center;
+  padding-top: 250px;
+  animation-name: comeDown;
+  animation-duration: 2s;
+  transition-timing-function: ease;
+}
+
+@keyframes comeDown {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.head-text h1 {
+  font-size: 100px;
+  margin-bottom: 15px;
+}
+
+.head-text h2 {
+  font-size: 40px;
+}
+
+/* My favourite destinations */
+#travel-program {
+  width: 100%;
+  padding: 100px 50px;
+  text-align: center;
+  background-color: #e1e5ea;
+}
+
+#travel-program h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+/* Destinations */
+.destination-one {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/seychelles.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.destination-two {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/coral-reefs.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.destination-three {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/aurora-boreallis.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.destination-four {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/ladakh.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.destination-five {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/venice.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.destination-six {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/mount-fuji.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.d1 {
+  background-color: #3d84b8;
+}
+
+.d2 {
+  background-color: #ffc288;
+}
+
+.d3 {
+  background-color: #325288;
+}
+
+.d4 {
+  background-color: #fa9905;
+}
+
+.d5 {
+  background-color: #ff79cd;
+}
+
+.d6 {
+  background-color: #f58634;
+}
+
+/* Footer Section */
+
+#main-footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0.8;
+}
+
+.foot h2 {
+  font-size: 20px;
+  color: white;
+}
+
+.icons i {
+  font-size: 30px;
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  transform: scale(1.4);
+  transition: 0.5s;
+}
+
+/* Media Queries*/
+
+@media (max-width: 800px) {
+  .head-text h1 {
+    font-size: 70px;
+  }
+
+  .head-text h2 {
+    font-size: 35px;
+    padding: 0 30px;
+  }
+
+  #travel-program h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #aa2ee6;
+    color: #fff;
+    outline: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .dest h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .quote h2 {
+    padding: 10px 0;
+    font-size: 30px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 600px) {
+  .head-text h1 {
+    font-size: 40px;
+  }
+
+  .head-text h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+
+  #travel-program h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #aa2ee6;
+    color: #fff;
+    outline: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 17px;
+  }
+
+  .dest h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .quote h2 {
+    padding: 15px;
+    font-size: 20px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    letter-spacing: 3px;
+  }
+
+  .foot h2 {
+    font-size: 15px;
+  }
+
+  .icons i {
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+}
